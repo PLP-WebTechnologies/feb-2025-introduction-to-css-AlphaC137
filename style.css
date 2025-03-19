@@ -1,0 +1,132 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* ID Selector */
+#main-header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid #3498db;
+    position: relative;
+    overflow: hidden;
+}
+
+#main-header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#main-header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* Class Selector */
+.content-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    animation: slideUp 1s ease-out;
+}
+
+/* Image Styling */
+.image-container {
+    border: 3px solid #3498db;
+    padding: 10px;
+    margin: 2rem 0;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Highlight Box Styling */
+.highlight-box {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid #3498db;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
